@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="해피뉴이어라능~💙">
+    <meta property="og:description" content="두근두근 새해운세뽑기!">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            background-color: #ffbbcb;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #000000;;
+            font-size: 2.5rem;
+        }
+
+        button {
+            background-color: rgb(208, 186, 186);
+            color: black;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color:rgb(130, 130, 130);
+        }
+
+        .message {
+            margin-top: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h3>하이헬로~~ 나는 혜미니라능</h3>
+    <img src="hmine.jpeg" width="35%";>
+    <h2>⚕️ 올해는 푸른뱀의 해~~✨</h2>
+    <h4><br>2025년은 누구보다 행복한 한 해가
+        <br>되었으면 좋겠어👍😍
+        <br>혜민이가 응원해🩷🎀😍🤍🫶🏻
+    </h4>
+    <button onclick="showMessage()">혜미니표 새해운세뽑기</button>
+    <div class="message" id="messageBox"></div>
+
+    <script>
+        // 새해 인삿말 배열
+        const messages = [
+            "당신의2025퍼컬은바로바로혜민잉🍀",
+            "혜미니랑함께하는날이많아질거래🧡",
+            "하는일이모두잘될거야혜민이가응원해👍",
+            "주변사람들이모두건강할거야소중한사람과오래도록함께하자🎀",
+            "새로운사랑이찾아온다는데?🤍",
+            "랜덤 형석 당첨🥳"
+        ];
+
+        // 랜덤 인삿말 출력 함수
+        function showMessage() {
+            const randomIndex = Math.floor(Math.random() * messages.length);
+            const messageBox = document.getElementById("messageBox");
+            messageBox.textContent = messages[randomIndex];
+        }
+    </script>
+</body>
+</html>
